@@ -11,11 +11,20 @@ import { MailResponse, EmailTrackingEntity } from './model/email-address';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { TrackingDetailsComponent } from './details/tracking-details/tracking-details.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, FormsModule, HttpClientModule],
+  imports: [
+    CommonModule,
+    FormsModule,
+    HttpClientModule,
+    RouterOutlet,
+    FormsModule,
+    HttpClientModule,
+    TrackingDetailsComponent,
+  ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
   changeDetection: ChangeDetectionStrategy.OnPush,
