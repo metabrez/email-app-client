@@ -5,7 +5,7 @@ import {
   OnInit,
   signal,
 } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { RouterOutlet, RouterLink, RouterLinkActive } from '@angular/router';
 import { TrackingService } from './service/tracking.service';
 import { MailResponse, EmailTrackingEntity } from './model/email-address';
 import { CommonModule } from '@angular/common';
@@ -24,6 +24,8 @@ import { TrackingDetailsComponent } from './details/tracking-details/tracking-de
     FormsModule,
     HttpClientModule,
     TrackingDetailsComponent,
+    RouterLink,
+    RouterLinkActive,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
